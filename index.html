@@ -2,32 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Your Name | Digital Business Card</title>
+  <title>Your Company Name | Insurance Services</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Scan to save contact details" />
+  <meta name="description" content="Trusted insurance solutions for life, health, auto, and business." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="card">
-    <img src="https://via.placeholder.com/120" alt="Profile Photo" class="avatar" />
 
-    <h1>Your Name</h1>
-    <h2>Your Job Title</h2>
-    <p class="company">Your Company Name</p>
+<header class="hero">
+  <div class="hero-content">
+    <h1>Protect What Matters Most</h1>
+    <p>Trusted insurance solutions for individuals, families, and businesses.</p>
 
-    <div class="buttons">
-      <a href="tel:+1234567890" class="btn">📞 Call</a>
-      <a href="mailto:you@email.com" class="btn">✉️ Email</a>
-      <a href="https://wa.me/1234567890" class="btn">💬 WhatsApp</a>
-      <button class="btn primary" onclick="downloadVCard()">📇 Save Contact</button>
+    <div class="cta-buttons">
+      <a href="tel:+1234567890" class="btn primary">📞 Call Now</a>
+      <a href="#quote" class="btn">📝 Get Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<section class="services">
+  <h2>Our Insurance Services</h2>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>Life Insurance</h3>
+      <p>Secure your family’s future with reliable coverage.</p>
     </div>
 
-    <footer>
-      <p>Scan • Save • Connect</p>
-    </footer>
-  </div>
+    <div class="service-card">
+      <h3>Health Insurance</h3>
+      <p>Affordable health plans for individuals and families.</p>
+    </div>
 
-  <script src="script.js"></script>
+    <div class="service-card">
+      <h3>Auto Insurance</h3>
+      <p>Comprehensive protection for your vehicles.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Business Insurance</h3>
+      <p>Customized policies to protect your business.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <h2>Why Choose Us</h2>
+  <p>
+    With years of experience, we help clients find the right insurance coverage
+    at the best possible price. Honest advice. No pressure. Real protection.
+  </p>
+</section>
+
+<section class="quote" id="quote">
+  <h2>Request a Free Quote</h2>
+
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Full Name" required />
+    <input type="tel" placeholder="Phone Number" required />
+    <input type="email" placeholder="Email Address" required />
+
+    <select required>
+      <option value="">Select Insurance Type</option>
+      <option>Life Insurance</option>
+      <option>Health Insurance</option>
+      <option>Auto Insurance</option>
+      <option>Business Insurance</option>
+    </select>
+
+    <button type="submit" class="btn primary">Submit Request</button>
+  </form>
+
+  <p class="note">We respect your privacy. No spam.</p>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Your Company Name. All rights reserved.</p>
+  <p>Licensed Insurance Agent</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
